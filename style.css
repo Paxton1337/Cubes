@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272727;
+}
+
+.cubes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.form {
+    width: 90px;
+    height: 90px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    margin-right: 15px;
+    padding: 8px;
+}
+
+.first-cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -2px 2px 3px rgba(168, 153, 168, 1);
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background: #272727;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 1);
+}
+
+.second-cube,
+.third-cube,
+.fourth-cube,
+.five-cube,
+.six-cube {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px -2px 2px 3px rgba(168, 153, 168, 1);
+}
+
+.second-cube .point:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.third-cube .point:nth-of-type(2) {
+    align-self: center;
+}
+
+.third-cube .point:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.colum-1,
+.colum-2,
+.colum-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.five-cube .colum-2 {
+    justify-content: center;
+}
+
+
+/* Animate.css */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}

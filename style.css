@@ -14,6 +14,9 @@ body {
 }
 
 .form {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px -2px 2px 3px rgba(168, 153, 168, 1);
     width: 90px;
     height: 90px;
     background-color: #e7e7e7;
@@ -37,26 +40,13 @@ body {
     box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 1);
 }
 
-.second-cube,
-.third-cube,
-.fourth-cube,
-.five-cube,
-.six-cube {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: inset 0px -2px 2px 3px rgba(168, 153, 168, 1);
-}
-
-.second-cube .point:nth-of-type(2) {
+.second-cube .point:nth-of-type(2),
+.third-cube .point:nth-of-type(3) {
     align-self: flex-end;
 }
 
 .third-cube .point:nth-of-type(2) {
     align-self: center;
-}
-
-.third-cube .point:nth-of-type(3) {
-    align-self: flex-end;
 }
 
 .colum-1,
